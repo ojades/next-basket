@@ -1,0 +1,100 @@
+version: "3"
+services:
+  users:
+    build:
+      args:
+        user: speklz
+        uid: 1000
+      context: .
+      dockerfile: Dockerfile
+    image: users
+    container_name: users
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www/users
+    ports:
+      - "89:80"
+    volumes:
+      - ./users:/var/www/users
+      - ./users/bin/run.sh:/usr/local/bin/run.sh
+    networks:
+      - app-network
+    command: "/usr/local/bin/run.sh"
+
+  #Notifications Service
+  notifications:
+    build:
+      args:
+        user: speklz
+        uid: 1000
+      context: .
+      dockerfile: Dockerfile
+    image: notifications
+    container_name: notifications
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www/notifications
+    ports:
+      - "90:80"
+    volumes:
+      - ./notifications:/var/www/notifications
+      - ./notifications/bin/run.sh:/usr/local/bin/run.sh
+    networks:
+      - app-network
+    command: "/usr/local/bin/run.sh"
+
+  #MySQL Service
+  db:
+    image: mysql:5.7.22
+    container_name: db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: users_app
+      MYSQL_ROOT_PASSWORD: uz3rp@@s
+      MYSQL_PASSWORD: uz3rp@@s
+      MYSQL_USER: db_user
+    volumes:
+      - ./data/db:/var/lib/mysql/
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - app-network
+
+  # Redis Service
+  redis:
+    image: redis:3.2
+    container_name: redis
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    networks:
+      - app-network
+
+  #RabbitMQ Service
+  rabbitmq:
+    image: rabbitmq:3.8.14
+    container_name: rabbitmq
+    volumes:
+      - ./data/rabbitmq:/etc/rabbitmq/
+    ports:
+      - "15672:15672"
+      - "4369:4369"
+      - "5672:5672"
+      - "25672:25672"
+      - "5671:5671"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge

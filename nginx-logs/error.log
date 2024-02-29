@@ -1,0 +1,153 @@
+2024/02/28 21:00:23 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:00:25 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:00:25 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:00:26 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:00:27 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:02:09 [emerg] 1#1: host not found in upstream "notifications" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:02:11 [emerg] 1#1: host not found in upstream "notifications" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:02:12 [emerg] 1#1: host not found in upstream "notifications" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:02:13 [emerg] 1#1: host not found in upstream "notifications" in /etc/nginx/conf.d/notifications.conf:10
+2024/02/28 21:02:29 [notice] 1#1: using the "epoll" event method
+2024/02/28 21:02:29 [notice] 1#1: nginx/1.25.4
+2024/02/28 21:02:29 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/28 21:02:29 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/28 21:02:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/28 21:02:29 [notice] 1#1: start worker processes
+2024/02/28 21:02:29 [notice] 1#1: start worker process 19
+2024/02/28 21:02:29 [notice] 1#1: start worker process 20
+2024/02/28 21:02:29 [notice] 1#1: start worker process 21
+2024/02/28 21:02:29 [notice] 1#1: start worker process 22
+2024/02/28 21:02:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/02/28 21:02:33 [notice] 19#19: gracefully shutting down
+2024/02/28 21:02:33 [notice] 21#21: gracefully shutting down
+2024/02/28 21:02:33 [notice] 21#21: exiting
+2024/02/28 21:02:33 [notice] 22#22: gracefully shutting down
+2024/02/28 21:02:33 [notice] 22#22: exiting
+2024/02/28 21:02:33 [notice] 20#20: gracefully shutting down
+2024/02/28 21:02:33 [notice] 20#20: exiting
+2024/02/28 21:02:33 [notice] 19#19: exiting
+2024/02/28 21:02:33 [notice] 21#21: exit
+2024/02/28 21:02:33 [notice] 22#22: exit
+2024/02/28 21:02:33 [notice] 20#20: exit
+2024/02/28 21:02:33 [notice] 19#19: exit
+2024/02/28 21:02:33 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/02/28 21:02:33 [notice] 1#1: worker process 21 exited with code 0
+2024/02/28 21:02:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/28 21:02:33 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2024/02/28 21:02:33 [notice] 1#1: worker process 19 exited with code 0
+2024/02/28 21:02:33 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/28 21:02:33 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2024/02/28 21:02:33 [notice] 1#1: worker process 20 exited with code 0
+2024/02/28 21:02:33 [notice] 1#1: worker process 22 exited with code 0
+2024/02/28 21:02:33 [notice] 1#1: exit
+2024/02/28 21:05:50 [notice] 1#1: using the "epoll" event method
+2024/02/28 21:05:50 [notice] 1#1: nginx/1.25.4
+2024/02/28 21:05:50 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/28 21:05:50 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/28 21:05:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/28 21:05:50 [notice] 1#1: start worker processes
+2024/02/28 21:05:50 [notice] 1#1: start worker process 20
+2024/02/28 21:05:50 [notice] 1#1: start worker process 21
+2024/02/28 21:05:50 [notice] 1#1: start worker process 22
+2024/02/28 21:05:50 [notice] 1#1: start worker process 23
+2024/02/28 21:07:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/02/28 21:07:18 [notice] 20#20: gracefully shutting down
+2024/02/28 21:07:18 [notice] 23#23: gracefully shutting down
+2024/02/28 21:07:18 [notice] 22#22: gracefully shutting down
+2024/02/28 21:07:18 [notice] 21#21: gracefully shutting down
+2024/02/28 21:07:18 [notice] 20#20: exiting
+2024/02/28 21:07:18 [notice] 23#23: exiting
+2024/02/28 21:07:18 [notice] 22#22: exiting
+2024/02/28 21:07:18 [notice] 21#21: exiting
+2024/02/28 21:07:18 [notice] 21#21: exit
+2024/02/28 21:07:18 [notice] 20#20: exit
+2024/02/28 21:07:18 [notice] 23#23: exit
+2024/02/28 21:07:18 [notice] 22#22: exit
+2024/02/28 21:07:18 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2024/02/28 21:07:18 [notice] 1#1: worker process 21 exited with code 0
+2024/02/28 21:07:18 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/28 21:07:18 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2024/02/28 21:07:18 [notice] 1#1: worker process 22 exited with code 0
+2024/02/28 21:07:18 [notice] 1#1: worker process 23 exited with code 0
+2024/02/28 21:07:18 [notice] 1#1: signal 29 (SIGIO) received
+2024/02/28 21:07:18 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2024/02/28 21:07:18 [notice] 1#1: worker process 20 exited with code 0
+2024/02/28 21:07:18 [notice] 1#1: exit
+2024/02/28 21:07:31 [notice] 1#1: using the "epoll" event method
+2024/02/28 21:07:31 [notice] 1#1: nginx/1.25.4
+2024/02/28 21:07:31 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/28 21:07:31 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/28 21:07:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/28 21:07:31 [notice] 1#1: start worker processes
+2024/02/28 21:07:31 [notice] 1#1: start worker process 20
+2024/02/28 21:07:31 [notice] 1#1: start worker process 21
+2024/02/28 21:07:31 [notice] 1#1: start worker process 22
+2024/02/28 21:07:31 [notice] 1#1: start worker process 23
+2024/02/28 21:15:31 [notice] 1#1: using the "epoll" event method
+2024/02/28 21:15:31 [notice] 1#1: nginx/1.25.4
+2024/02/28 21:15:31 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/28 21:15:31 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/28 21:15:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/28 21:15:31 [notice] 1#1: start worker processes
+2024/02/28 21:15:31 [notice] 1#1: start worker process 20
+2024/02/28 21:15:31 [notice] 1#1: start worker process 21
+2024/02/28 21:15:31 [notice] 1#1: start worker process 22
+2024/02/28 21:15:31 [notice] 1#1: start worker process 23
+2024/02/29 06:46:46 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:46:47 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:46:48 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:46:49 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:46:50 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:46:53 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:46:56 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:47:03 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:47:17 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 06:47:43 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:22:39 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:23:39 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:24:40 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:25:40 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:26:41 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:27:42 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:28:42 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:29:43 [emerg] 1#1: unexpected ";" in /etc/nginx/conf.d/users.conf:6
+2024/02/29 07:30:25 [notice] 1#1: using the "epoll" event method
+2024/02/29 07:30:25 [notice] 1#1: nginx/1.25.4
+2024/02/29 07:30:25 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/29 07:30:25 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/29 07:30:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/29 07:30:25 [notice] 1#1: start worker processes
+2024/02/29 07:30:25 [notice] 1#1: start worker process 20
+2024/02/29 07:30:25 [notice] 1#1: start worker process 21
+2024/02/29 07:30:25 [notice] 1#1: start worker process 22
+2024/02/29 07:30:25 [notice] 1#1: start worker process 23
+2024/02/29 07:36:34 [notice] 1#1: using the "epoll" event method
+2024/02/29 07:36:34 [notice] 1#1: nginx/1.25.4
+2024/02/29 07:36:34 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/29 07:36:34 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/29 07:36:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/29 07:36:34 [notice] 1#1: start worker processes
+2024/02/29 07:36:34 [notice] 1#1: start worker process 20
+2024/02/29 07:36:34 [notice] 1#1: start worker process 21
+2024/02/29 07:36:34 [notice] 1#1: start worker process 22
+2024/02/29 07:36:34 [notice] 1#1: start worker process 23
+2024/02/29 07:39:04 [notice] 1#1: using the "epoll" event method
+2024/02/29 07:39:04 [notice] 1#1: nginx/1.25.4
+2024/02/29 07:39:04 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/29 07:39:04 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/29 07:39:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/29 07:39:04 [notice] 1#1: start worker processes
+2024/02/29 07:39:04 [notice] 1#1: start worker process 21
+2024/02/29 07:39:04 [notice] 1#1: start worker process 22
+2024/02/29 07:39:04 [notice] 1#1: start worker process 23
+2024/02/29 07:39:04 [notice] 1#1: start worker process 24
+2024/02/29 09:02:06 [notice] 1#1: using the "epoll" event method
+2024/02/29 09:02:06 [notice] 1#1: nginx/1.25.4
+2024/02/29 09:02:06 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+2024/02/29 09:02:06 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2024/02/29 09:02:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/02/29 09:02:06 [notice] 1#1: start worker processes
+2024/02/29 09:02:06 [notice] 1#1: start worker process 20
+2024/02/29 09:02:06 [notice] 1#1: start worker process 21
+2024/02/29 09:02:06 [notice] 1#1: start worker process 22
+2024/02/29 09:02:06 [notice] 1#1: start worker process 23
