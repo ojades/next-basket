@@ -45,5 +45,5 @@ WORKDIR $HOME
 COPY ./$service/. . 
 RUN chown -R $user $HOME
 
-COPY ./users/bin/run.sh /usr/local/bin/run.sh
+COPY ./$service/bin/run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
