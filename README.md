@@ -20,6 +20,31 @@ You can get started easily by starting up with docker
 
 `$ cd next-basket`
 
+make a copy of .env.exmple in each of `users` and `notifications` directories and change to match your configuration
+
+`$ cp .env.example .env`
+
+Configurations you'll need for the applications are:
+
+```
+APP_URL=http://localhost:89
+
+MQ_HOST=rabbitmq
+MQ_PORT=5672
+MQ_USER=rabbitmq
+MQ_PASS=rabbitmq
+MQ_VHOST="/"
+
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=users_app
+DB_USERNAME=db_user
+DB_PASSWORD=uz3rp@@s
+```
+
+You can change any of these defaults, but you'll have to modify same in the `docker-compose.yml` configuration file.
+
 `$ docker compose up --build -d`
 
 This will pull the necessary images and build up the containers for each service.
