@@ -3,6 +3,7 @@ FROM php:8.2-apache
 
 ARG user
 ARG uid
+ARG service=notifications
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -29,8 +30,7 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
 
 #set our application folder as an environment variable
-ENV USERS_HOME /var/www/users
-ENV NOTIFICATIONS_HOME /var/www/notifications
+ENV HOME /var/www/$service
 
 # Create system user to run Composer and Artisan commands
 RUN useradd -G www-data,root -u $uid -d /home/$user $user
@@ -40,15 +40,10 @@ RUN mkdir -p /home/$user/.composer && \
 # enable apache module rewrite
 RUN a2enmod rewrite
 
-WORKDIR $USERS_HOME
-COPY ./users/. .
-RUN chown -R $user $USERS_HOME
+WORKDIR $HOME
 
-WORKDIR $NOTIFICATIONS_HOME
-COPY ./notifications/. .
-RUN chown -R $user $NOTIFICATIONS_HOME
-
-WORKDIR /var/www
+COPY ./$service/. . 
+RUN chown -R $user $HOME
 
 COPY ./users/bin/run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh

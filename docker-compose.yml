@@ -5,6 +5,7 @@ services:
       args:
         user: speklz
         uid: 1000
+        service: users
       context: .
       dockerfile: Dockerfile
     image: users
@@ -15,7 +16,6 @@ services:
     ports:
       - "89:80"
     volumes:
-      - /users/vendor
       - ./users:/var/www/users
       - ./users/bin/run.sh:/usr/local/bin/run.sh
     networks:
@@ -28,6 +28,7 @@ services:
       args:
         user: speklz
         uid: 1000
+        service: notifications
       context: .
       dockerfile: Dockerfile
     image: notifications
@@ -38,7 +39,6 @@ services:
     ports:
       - "90:80"
     volumes:
-      - /notifications/vendor
       - ./notifications:/var/www/notifications
       - ./notifications/bin/run.sh:/usr/local/bin/run.sh
     networks:
