@@ -63,9 +63,16 @@ e4c3e1e1901e   notifications     "docker-php-entrypoi…"   27 seconds ago   Up 
 
 ### Using The Application
 
-`{users_service_base_url} - localhost:89`
+For a Live Demo
+`users_service_base_url - http://20.56.72.13:89`
 
-`{notifications_service_base_url} - localhost:90`
+`notifications_service_base_url - http://20.56.72.13:90`
+
+On your computer
+
+`users_service_base_url - http://localhost:89`
+
+`notifications_service_base_url - http://localhost:90`
 
 If you have specified a different port binding the docker-compose.yml file, use that in your url.
 

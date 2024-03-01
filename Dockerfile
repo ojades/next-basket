@@ -44,13 +44,9 @@ WORKDIR $USERS_HOME
 COPY ./users/. .
 RUN chown -R $user $USERS_HOME
 
-## install all PHP dependencies
-RUN composer install --no-interaction
-
 WORKDIR $NOTIFICATIONS_HOME
 COPY ./notifications/. .
 RUN chown -R $user $NOTIFICATIONS_HOME
-RUN composer install --no-interaction
 
 WORKDIR /var/www
 
